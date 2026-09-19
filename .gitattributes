@@ -4,3 +4,6 @@ setup.bat -text
 
 # 공공데이터 CSV 원본도 인코딩을 변환하지 않는다(원본 보존).
 data/raw/** -text
+
+# 인코딩 통일 사본도 바이트를 그대로 보존한다(UTF-8 BOM + 원본 줄바꿈).
+data/processed/** -text
