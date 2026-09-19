@@ -22,9 +22,14 @@ ROOT = Path(__file__).resolve().parent.parent
 def load_env(path=ROOT / ".env"):
     """.env 파일을 읽어 dict 로 돌려준다. (외부 라이브러리 없이 동작)"""
     if not path.exists():
+        template = path.parent / ".env.example"
+        if not template.exists():
+            raise SystemExit(f"[오류] {path} 도 {template} 도 없습니다.")
+        # 처음 실행이면 양식을 복사해 .env 를 대신 만들어 준다.
+        path.write_text(template.read_text(encoding="utf-8"), encoding="utf-8")
         raise SystemExit(
-            f"[오류] {path} 파일이 없습니다.\n"
-            f"       터미널에서 `cp .env.example .env` 실행 후 키를 채워주세요."
+            f"[안내] {path} 파일을 새로 만들었습니다.\n"
+            f"       파일을 열어 XXXX 자리에 인증키를 넣고 저장한 뒤 다시 실행하세요."
         )
     env = {}
     for line in path.read_text(encoding="utf-8").splitlines():
