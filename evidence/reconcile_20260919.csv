@@ -1,0 +1,99 @@
+﻿번호,구분,확장자,목록명,상태,대응파일,대응개수,URL
+1,파일,xlsx,한국석유공사_빗물이용시설 운영자료,누락,,0,https://www.data.go.kr/data/15163182/fileData.do
+2,API,XML,한국석유공사_시도별 주유소 평균가격(현재),API(파일없음),,0,https://www.data.go.kr/data/15163154/openapi.do
+3,API,XML,한국석유공사_요소수 주유소 판매가격(지역별),API(파일없음),,0,https://www.data.go.kr/data/15163152/openapi.do
+4,API,XML,한국석유공사_시군구별 주유소 평균가격(현재),API(파일없음),,0,https://www.data.go.kr/data/15163148/openapi.do
+5,파일,jpg,한국석유공사_무인잠수정(ROV) 사진,누락,,0,https://www.data.go.kr/data/15150935/fileData.do
+6,파일,pdf,한국석유공사_오늘의 뉴스(일일석유뉴스),누락,,0,https://www.data.go.kr/data/15150934/fileData.do
+7,API,XML,한국석유공사_전국 주유소 평균가격 오픈 API,API(파일없음),,0,https://www.data.go.kr/data/15150932/openapi.do
+8,파일,csv,한국석유공사_국내대륙붕 석유개발 기술자료 목록,누락,,0,https://www.data.go.kr/data/15150922/fileData.do
+9,API,XML,한국석유공사_지역코드 오픈 API,API(파일없음),,0,https://www.data.go.kr/data/15150471/openapi.do
+10,API,XML,한국석유공사_주유소 상세정보(ID) 오픈 API,API(파일없음),,0,https://www.data.go.kr/data/15150468/openapi.do
+11,API,XML,한국석유공사_반경 내 주유소 오픈 API,API(파일없음),,0,https://www.data.go.kr/data/15150464/openapi.do
+12,API,XML,한국석유공사_지역별 최저가 주유소(TOP20) 오픈 API,API(파일없음),,0,https://www.data.go.kr/data/15150462/openapi.do
+13,파일,csv,한국석유공사_가격자유화이전 정유사 가격정보,누락,,0,https://www.data.go.kr/data/15148676/fileData.do
+14,파일,csv,한국석유공사_주유소지역상표별통계,누락,,0,https://www.data.go.kr/data/15148328/fileData.do
+15,파일,csv,한국석유공사_공공데이터 목록 현황 정보,누락,,0,https://www.data.go.kr/data/15144357/fileData.do
+16,파일,mp4,한국석유공사_석유개발과 생산 2차시,영상(대상제외),,0,https://www.data.go.kr/data/15130028/fileData.do
+17,파일,mp4,한국석유공사_석유개발과 생산 1차시,영상(대상제외),,0,https://www.data.go.kr/data/15130027/fileData.do
+18,파일,mp4,한국석유공사_석유산업개관 교육자료,영상(대상제외),,0,https://www.data.go.kr/data/15130026/fileData.do
+19,파일,pdf,한국석유공사_석유개발 기술자료 공개 제도,누락,,0,https://www.data.go.kr/data/15128956/fileData.do
+20,파일,pdf,한국석유공사_공공데이터 활용 가이드북,누락,,0,https://www.data.go.kr/data/15128955/fileData.do
+21,파일,csv,한국석유공사_상표권 보유 현황,확보,한국석유공사_상표권 보유 현황_20260610.csv,1,https://www.data.go.kr/data/15128953/fileData.do
+22,파일,csv,한국석유공사_세계 원유 수출입 물량,확보,한국석유공사_세계 원유 수출입 물량_20250710.csv,1,https://www.data.go.kr/data/15128950/fileData.do
+23,파일,csv,한국석유공사_세계 석유제품 수출입 물량,확보,한국석유공사_세계 석유제품 수출입 물량_20250710.csv,1,https://www.data.go.kr/data/15128949/fileData.do
+24,파일,csv,한국석유공사_세계석유 공급현황(지역별 석유 매장량),확보,한국석유공사_세계석유 공급현황(지역별 석유 매장량)_20250804.csv,1,https://www.data.go.kr/data/15128948/fileData.do
+25,파일,csv,한국석유공사_세계석유 공급현황(주요국별 석유 매장량),확보,한국석유공사_세계석유 공급현황(주요국별 석유 매장량)_20250710.csv,1,https://www.data.go.kr/data/15128947/fileData.do
+26,파일,csv,한국석유공사_세계석유 공급현황(주요국별 석유 생산량),확보,한국석유공사_세계석유 공급현황(주요국별 석유 생산량)_20250710.csv,1,https://www.data.go.kr/data/15128946/fileData.do
+27,파일,csv,한국석유공사_세계석유 수요현황(세계 석유소비량 추이),확보,한국석유공사_세계석유 수요현황(세계 석유소비량 추이)_20250804.csv,1,https://www.data.go.kr/data/15128945/fileData.do
+28,파일,csv,한국석유공사_세계석유 수요현황(주요국 일인당 석유소비량),확보,한국석유공사_세계석유 수요현황(주요국 일인당 석유소비량)_20250710.csv,1,https://www.data.go.kr/data/15128944/fileData.do
+29,파일,mp4,한국석유공사_안전한국훈련 사전영상,영상(대상제외),,0,https://www.data.go.kr/data/15128942/fileData.do
+30,파일,csv,한국석유공사_용수 사용량,확보,한국석유공사_용수 사용량_20241231.csv,1,https://www.data.go.kr/data/15128941/fileData.do
+31,파일,csv,한국석유공사_폐기물 발생량,확보,한국석유공사_폐기물 발생량_20250708.csv,1,https://www.data.go.kr/data/15128940/fileData.do
+32,파일,csv,한국석유공사_저공해 자동차 구매임차 현황,확보,한국석유공사_저공해 자동차 구매임차 현황_20251231.csv,1,https://www.data.go.kr/data/15128939/fileData.do
+33,파일,csv,한국석유공사_저공해 자동차 보유현황,확보,한국석유공사_저공해 자동차 보유현황_20251231.csv,1,https://www.data.go.kr/data/15128938/fileData.do
+34,파일,csv,한국석유공사_에너지 사용량,확보,한국석유공사_에너지 사용량_20241231.csv,1,https://www.data.go.kr/data/15128937/fileData.do
+35,파일,csv,한국석유공사_온실가스 감축실적,확보,한국석유공사_온실가스 감축실적_20241231.csv,1,https://www.data.go.kr/data/15128936/fileData.do
+36,파일,pdf,한국석유공사_ 지속가능 경영보고서,확보,지속가능경영보고서 25년_한국석유공사.pdf,1,https://www.data.go.kr/data/15128935/fileData.do
+37,파일,csv,한국석유공사_인천지역 등유 가격 현황,확보,한국석유공사_인천지역 등유 가격 현황_20260430.csv,1,https://www.data.go.kr/data/15128332/fileData.do
+38,파일,csv,한국석유공사_인천지역 경유 가격 현황,확보,한국석유공사_인천지역 경유 가격 현황_20260430.csv,1,https://www.data.go.kr/data/15128331/fileData.do
+39,파일,csv,한국석유공사_인천지역 휘발유 가격 현황,확보,한국석유공사_인천지역 휘발유 가격 현황_20260430 (1).csv,1,https://www.data.go.kr/data/15128330/fileData.do
+40,파일,csv,한국석유공사_인천지역 주유소 위치 현황,확보,한국석유공사_인천지역 주유소 위치 현황_20240530.csv,1,https://www.data.go.kr/data/15128244/fileData.do
+41,파일,csv,한국석유공사_대전 석유제품 소비량,확보,한국석유공사_대전 석유제품 소비량_20251231.csv,1,https://www.data.go.kr/data/15122211/fileData.do
+42,파일,csv,한국석유공사_유통단계별 석유제품 소비 비율,확보,한국석유공사_유통단계별 석유제품 소비 비율_20251231.csv,1,https://www.data.go.kr/data/15122078/fileData.do
+43,파일,csv,한국석유공사_비축지사 주소,확보,한국석유공사_비축지사 주소_20230830.csv,1,https://www.data.go.kr/data/15121350/fileData.do
+44,파일,csv,한국석유공사_지역별 자동차충전소 개수,확보,한국석유공사_지역별 자동차충전소 개수_20230830.csv,1,https://www.data.go.kr/data/15121340/fileData.do
+45,파일,csv,한국석유공사_제주 석유제품 소비량,확보,한국석유공사_제주 석유제품 소비량_20251231.csv,1,https://www.data.go.kr/data/15121157/fileData.do
+46,파일,csv,한국석유공사_제주 석유제품 연간 소비량,확보,한국석유공사_제주 석유제품 연간 소비량_20251231.csv,1,https://www.data.go.kr/data/15121148/fileData.do
+47,파일,csv,한국석유공사_주유소 요소수 평균판매가격_상표별,확보,한국석유공사_주유소 요소수 평균판매가격_상표별_20260630.csv,1,https://www.data.go.kr/data/15118235/fileData.do
+48,파일,csv,한국석유공사_주유소 요소수 평균판매가격_지역별,확보,한국석유공사_주유소 요소수 평균판매가격_지역별_20260630.csv,1,https://www.data.go.kr/data/15118233/fileData.do
+49,파일,xls,한국석유공사_제품별 유류세 변동 내역,확보,세금변동추이.xls,1,https://www.data.go.kr/data/15101748/fileData.do
+50,파일,CSV,한국석유공사_자동차충전소 평균 판매가격(상표별),확보,자동차충전소_상표별_평균판매가격.csv,1,https://www.data.go.kr/data/15101743/fileData.do
+51,파일,CSV,한국석유공사_자동차충전소 평균 판매가격(지역별),확보,자동차충전소_지역별_평균판매가격.csv,1,https://www.data.go.kr/data/15101742/fileData.do
+52,파일,CSV,한국석유공사_자동차충전소 전국 평균 판매가격,확보,자동차충전소_제품별_평균판매가격.csv,1,https://www.data.go.kr/data/15101741/fileData.do
+53,파일,CSV,한국석유공사_면세유 주유소 평균 판매가격(상표별),확보,주유소_상표별_면세유평균판매가격.csv,1,https://www.data.go.kr/data/15101739/fileData.do
+54,파일,CSV,한국석유공사_면세유 주유소 평균 판매가격(지역별),확보,주유소_지역별_면세유평균판매가격.csv,1,https://www.data.go.kr/data/15101738/fileData.do
+55,파일,CSV,한국석유공사_ 면세유 주유소 평균 판매가격(제품별),확보,주유소_제품별_면세유평균판매가격.csv,1,https://www.data.go.kr/data/15101736/fileData.do
+56,파일,csv,한국석유공사_수의계약정보공개,확보,한국석유공사_수의계약정보공개_20251231.csv,1,https://www.data.go.kr/data/15100090/fileData.do
+57,파일,csv,한국석유공사_수의계약업체,확보,한국석유공사_수의계약업체_20251231.csv,1,https://www.data.go.kr/data/15100089/fileData.do
+58,파일,csv,한국석유공사_행정처분공표통계,확보,한국석유공사_행정처분공표통계_20210805.csv,1,https://www.data.go.kr/data/15085555/fileData.do
+59,파일,csv,한국석유공사_석유제품 전자상거래 가격,확보,전자상거래.csv,1,https://www.data.go.kr/data/15085527/fileData.do
+60,파일,csv,한국석유공사_지역별 직영 주유소 비율,확보,한국석유공사_지역별 직영 주유소 비율_20220329.csv,1,https://www.data.go.kr/data/15084116/fileData.do
+61,파일,csv,한국석유공사_알뜰주유소 현황,확보,한국석유공사_알뜰주유소 현황_20251231.csv,1,https://www.data.go.kr/data/15076635/fileData.do
+62,파일,PDF,한국석유공사_일반 석유상식,누락,,0,https://www.data.go.kr/data/15064697/fileData.do
+63,파일,csv,한국석유공사_석유제품수출_국가별,확보,한국석유공사_석유제품수출_국가별_20251231.csv,1,https://www.data.go.kr/data/15054610/fileData.do
+64,파일,csv,한국석유공사_석유제품수입_제품별,확보,한국석유공사_석유제품수입_제품별_20241231.csv,1,https://www.data.go.kr/data/15054609/fileData.do
+65,파일,csv,한국석유공사_석유제품수출_제품별,확보,한국석유공사_석유제품수출_제품별_20251231.csv,1,https://www.data.go.kr/data/15054608/fileData.do
+66,파일,csv,한국석유공사_석유제품수입_국가별,확보,한국석유공사_석유제품수입_국가별_20241231.csv,1,https://www.data.go.kr/data/15054607/fileData.do
+67,파일,csv,한국석유공사_국내 원유수입_국가별,확보,한국석유공사_국내 원유수입_국가별_20251231.csv,1,https://www.data.go.kr/data/15054606/fileData.do
+68,파일,csv,한국석유공사_국내 원유수입_유질별,확보,한국석유공사_국내 원유수입_유질별_20251231.csv,1,https://www.data.go.kr/data/15054605/fileData.do
+69,파일,csv,한국석유공사_국내 석유제품 제품별 소비현황,확보,한국석유공사_국내 석유제품 제품별 소비현황_20251231.csv,1,https://www.data.go.kr/data/15054604/fileData.do
+70,파일,csv,한국석유공사_국내 석유제품 산업별 소비현황,확보,한국석유공사_국내 석유제품 산업별 소비현황_20251231.csv,1,https://www.data.go.kr/data/15054603/fileData.do
+71,파일,csv,한국석유공사_국내 석유제품 지역별 소비현황,확보,한국석유공사_국내 석유제품 지역별 소비현황_20251231.csv,1,https://www.data.go.kr/data/15054602/fileData.do
+72,파일,csv,한국석유공사_국내 석유제품 생산 현황,확보,한국석유공사_국내 석유제품 생산 현황_20251231.csv,1,https://www.data.go.kr/data/15054601/fileData.do
+73,파일,csv,한국석유공사_국내석유제품재고,확보,한국석유공사_국내석유제품재고_20251231.csv,1,https://www.data.go.kr/data/15054600/fileData.do
+74,파일,csv,한국석유공사_국내 석유비축일수,확보,한국석유공사_국내 석유비축일수_20251231.csv,1,https://www.data.go.kr/data/15054591/fileData.do
+75,파일,csv,한국석유공사_국내 석유비축시설 및 비축물량,확보,한국석유공사_국내 석유비축시설 및 비축물량_20251231.csv,1,https://www.data.go.kr/data/15054590/fileData.do
+76,파일,csv,한국석유공사_석유 정제가동율 현황,확보,한국석유공사_석유 정제가동율 현황_20251231.csv,1,https://www.data.go.kr/data/15045416/fileData.do
+77,파일,csv,한국석유공사_정유사별_정제능력,확보,정제능력(정유사별).csv,1,https://www.data.go.kr/data/15045415/fileData.do
+78,파일,CSV,한국석유공사_국내 전국 개별 주유소 판매가격,확보,과거_판매가격(주유소)20260918-20260918.csv,1,https://www.data.go.kr/data/15044646/fileData.do
+79,파일,CSV,한국석유공사_석유대리점 평균판매가격,확보,대리점_평균판매가격.csv,1,https://www.data.go.kr/data/15044645/fileData.do
+80,파일,CSV,한국석유공사_상표별 주유소 판매가격,확보,주유소_상표별_평균판매가격.csv,1,https://www.data.go.kr/data/15044644/fileData.do
+81,파일,CSV,한국석유공사_지역별 주유소 판매가격,확보,주유소_지역별_평균판매가격.csv,1,https://www.data.go.kr/data/15044643/fileData.do
+82,파일,CSV,한국석유공사_형태별 주유소 판매가격,확보,주유소_형태별_평균판매가격.csv,1,https://www.data.go.kr/data/15044642/fileData.do
+83,파일,CSV,한국석유공사_LPG용기충전소 제품별 판매가격,확보,LPG충전소_제품별_평균판매가격.csv,1,https://www.data.go.kr/data/15044641/fileData.do
+84,파일,CSV,한국석유공사_LPG용기충전소 지역별 판매가격,확보,LPG충전소_지역별_평균판매가격.csv,1,https://www.data.go.kr/data/15044640/fileData.do
+85,파일,CSV,한국석유공사_LPG용기판매소 제품별 판매가격,확보,LPG판매소_제품별_평균판매가격.csv,1,https://www.data.go.kr/data/15044639/fileData.do
+86,파일,CSV,한국석유공사_LPG용기판매소 지역별 판매가격,확보,LPG판매소_지역별_평균판매가격.csv,1,https://www.data.go.kr/data/15044638/fileData.do
+87,파일,CSV,한국석유공사_LPG집단공급사업자 평균 판매가격,확보,LPG집단공급사업자_제품별_평균판매가격.csv,1,https://www.data.go.kr/data/15044637/fileData.do
+88,파일,CSV,한국석유공사_LPG집단공급사업자 회사별 판매가격,확보,LPG집단공급사업자_회사별_평균판매가격.csv,1,https://www.data.go.kr/data/15044636/fileData.do
+89,파일,CSV,한국석유공사_LPG집단공급사업자 지역별 판매가격,확보,LPG집단사업소_지역별_평균판매가격.csv,1,https://www.data.go.kr/data/15044635/fileData.do
+90,파일,CSV,한국석유공사_LPG판매소 회사별 판매가격,확보,LPG판매소_회사별_평균판매가격.csv,1,https://www.data.go.kr/data/15044634/fileData.do
+91,파일,CSV,한국석유공사_LPG용기충전소 회사별 월간 판매가격,확보,LPG충전소_회사별_평균판매가격.csv,1,https://www.data.go.kr/data/15044633/fileData.do
+92,파일,CSV,한국석유공사_정유사 회사별 공급가격,확보,정유사_주간공급가격_회사별.csv,1,https://www.data.go.kr/data/15044632/fileData.do
+93,파일,CSV,한국석유공사_회사별 정유사 판매가격,확보,정유사_월간판매가격_회사별.csv,1,https://www.data.go.kr/data/15044631/fileData.do
+94,파일,CSV,한국석유공사_제품별 정유사 판매가격,확보,정유사_월간판매가격_제품별.csv,1,https://www.data.go.kr/data/15044630/fileData.do
+95,파일,CSV,한국석유공사_정유사 제품별 공급가격,확보,정유사_주간공급가격_제품별.csv,1,https://www.data.go.kr/data/15044629/fileData.do
+96,파일,CSV,한국석유공사_제품별 주유소 판매가격,확보,주유소_평균판매가격_제품별.csv,1,https://www.data.go.kr/data/15044628/fileData.do
+97,파일,PDF,한국석유공사_국내석유제품 가격 동향,확보,월간국내유가동향_26년8월(1).pdf / 주간국내유가동향_9월_1주(1).pdf / 주간국내유가동향_9월_2주(1).pdf,3,https://www.data.go.kr/data/15038488/fileData.do
+98,파일,csv,한국석유공사_지역별 주유소 수,확보,한국석유공사_지역별 주유소 수_20251231.csv,1,https://www.data.go.kr/data/15038480/fileData.do
