@@ -1,0 +1,24 @@
+# ===== 절대 커밋 금지 =====
+.env
+.env.local
+*.key
+secrets.*
+
+# ===== 대용량 (GitHub 100MB 제한) =====
+*.mp4
+*.mov
+*.zip
+
+# ===== OS / 에디터 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
