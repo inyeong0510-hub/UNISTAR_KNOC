@@ -22,3 +22,6 @@ __pycache__/
 .venv/
 venv/
 .ipynb_checkpoints/
+
+# Word/한글 임시 잠금 파일
+~$*
