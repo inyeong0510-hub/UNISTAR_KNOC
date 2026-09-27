@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="한국석유공사 「일반 석유상식」 개방자료로 만든 석유 상식 퀴즈">
+<style>
+  :root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+  body{margin:0;font:14px/1.5 system-ui,-apple-system,sans-serif;background:#f9f9f7}
+  img{max-width:100%}[hidden]{display:none!important}
+</style><title>석유 상식 퀴즈</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Outfit:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --plane:#eef3fb; --card:#ffffff; --rail:#1c1d22; --ink:#10131a; --ink2:#5a6170; --muted:#8b93a3;
+  --line:#e4e9f2; --s1:#2a78d6; --ok:#0f7a55; --ok-bg:#dcf2e6; --no:#b3401f; --no-bg:#fbe3da;
+  --tile:#ede9fb; --tile-ink:#4a3aa7; --shadow:0 1px 2px rgba(16,19,26,.04),0 8px 24px rgba(16,19,26,.06); --r:18px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --plane:#0e1014; --card:#1f2024; --rail:#16171b; --ink:#f3f5f8; --ink2:#b3b9c6; --muted:#868d9b;
+  --line:#2e3037; --s1:#3987e5; --ok:#5fd3a4; --ok-bg:#16302a; --no:#f0906f; --no-bg:#3a2119;
+  --tile:#262338; --tile-ink:#b4a9f5; --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --plane:#0e1014; --card:#1f2024; --rail:#16171b; --ink:#f3f5f8; --ink2:#b3b9c6; --muted:#868d9b;
+  --line:#2e3037; --s1:#3987e5; --ok:#5fd3a4; --ok-bg:#16302a; --no:#f0906f; --no-bg:#3a2119;
+  --tile:#262338; --tile-ink:#b4a9f5; --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--plane);color:var(--ink);
+  font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,sans-serif;font-size:14px;line-height:1.6;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px 48px;display:flex;flex-direction:column;gap:14px}
+header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h1{font-family:"Outfit","Noto Sans KR",sans-serif;font-size:26px;font-weight:700;margin:0;letter-spacing:-.02em}
+.sub{color:var(--ink2);font-size:12.5px;margin-top:3px}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 13px;font-size:12px;
+  color:var(--ink2);box-shadow:var(--shadow);white-space:nowrap}
+.card{background:var(--card);border-radius:var(--r);box-shadow:var(--shadow);padding:22px}
+.meter{height:6px;border-radius:99px;background:var(--plane);overflow:hidden;margin-bottom:16px}
+.meter i{display:block;height:100%;background:var(--s1);border-radius:99px;transition:width .3s}
+.qtop{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.tag{background:var(--tile);color:var(--tile-ink);font-size:11px;font-weight:600;border-radius:999px;padding:4px 11px}
+.count{font-family:"Outfit",sans-serif;font-variant-numeric:tabular-nums;font-size:12px;color:var(--muted)}
+.q{font-size:18px;font-weight:700;line-height:1.5;margin:0 0 16px;letter-spacing:-.01em;text-wrap:balance}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{display:flex;gap:11px;align-items:flex-start;text-align:left;width:100%;padding:13px 15px;border-radius:13px;
+  border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;cursor:pointer;transition:border-color .15s,background .15s}
+.opt:hover:not(:disabled){border-color:var(--s1)}
+.opt:disabled{cursor:default}
+.opt:focus-visible{outline:2px solid var(--s1);outline-offset:2px}
+.opt .mk{flex:0 0 22px;height:22px;border-radius:7px;background:var(--plane);color:var(--ink2);
+  display:grid;place-items:center;font-family:"Outfit",sans-serif;font-size:12px;font-weight:600}
+.opt.ok{border-color:var(--ok);background:var(--ok-bg)} .opt.ok .mk{background:var(--ok);color:#fff}
+.opt.no{border-color:var(--no);background:var(--no-bg)} .opt.no .mk{background:var(--no);color:#fff}
+.exp{margin-top:14px;border-left:3px solid var(--s1);padding:2px 0 2px 13px;font-size:13px;color:var(--ink2)}
+.exp b{color:var(--ink)}
+.exp .src{display:block;margin-top:6px;font-size:11.5px;color:var(--muted)}
+.act{display:flex;justify-content:flex-end;margin-top:16px}
+button.go{border:0;border-radius:12px;background:var(--s1);color:#fff;font:inherit;font-weight:600;
+  padding:11px 22px;cursor:pointer}
+button.go:hover{filter:brightness(1.06)}
+button.go:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.score{text-align:center;padding:12px 0 6px}
+.score .n{font-family:"Outfit",sans-serif;font-size:56px;font-weight:700;letter-spacing:-.03em;line-height:1;
+  font-variant-numeric:tabular-nums}
+.score .g{font-size:15px;font-weight:600;margin-top:8px}
+.score .d{color:var(--ink2);font-size:13px;margin-top:6px}
+.review{display:flex;flex-direction:column;gap:9px;margin-top:20px}
+.rv{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;padding:11px 13px;border-radius:12px;background:var(--plane)}
+.rv .ic{flex:0 0 18px;height:18px;border-radius:6px;display:grid;place-items:center;font-size:11px;color:#fff;margin-top:1px}
+.rv.ok .ic{background:var(--ok)} .rv.no .ic{background:var(--no)}
+.foot{color:var(--muted);font-size:11.5px;line-height:1.7;padding:0 2px}
+@media (max-width:480px){h1{font-size:21px}.q{font-size:16px}.card{padding:17px}.score .n{font-size:44px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style><style>
+.themebtn{position:fixed;right:14px;bottom:14px;z-index:20;width:42px;height:42px;border-radius:50%;
+  border:1px solid var(--line);background:var(--card);color:var(--ink2);cursor:pointer;box-shadow:var(--shadow);
+  display:grid;place-items:center}
+.themebtn:hover{color:var(--ink)}
+.themebtn:focus-visible{outline:2px solid var(--s1);outline-offset:2px}
+@media print{.themebtn{display:none}}
+</style>
+<style>
+.sitenav{max-width:1280px;margin:0 auto;padding:14px 16px 0;display:flex;align-items:center;
+  justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px}
+.sitenav>a{font-weight:700;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.sitenav span{display:flex;gap:6px}
+.sitenav span a{color:var(--ink2);text-decoration:none;padding:6px 12px;border-radius:999px;
+  background:var(--card);border:1px solid var(--line)}
+.sitenav span a:hover{color:var(--ink)}
+.sitenav span a[aria-current="page"]{color:var(--ink);font-weight:600;border-color:var(--s1)}
+</style>
+</head>
+<body>
+<nav class="sitenav"><a href="./index.html">유니스타 · 석유공사 개방데이터</a>
+<span><a href="./dashboard.html">요소수 대시보드</a><a href="./quiz.html" aria-current="page">석유 상식 퀴즈</a></span></nav>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>석유 상식 퀴즈</h1>
+      <div class="sub">한국석유공사 「일반 석유상식」 개방자료로 만든 17문항</div>
+    </div>
+    <div class="chip">4지선다 · 바로 채점</div>
+  </header>
+
+  <div class="card" id="stage"></div>
+
+  <p class="foot" id="foot"></p>
+</div>
+
+<script id="qs" type="application/json">[{"c":"Ⅰ 석유의 이해","q":"‘석유(Petroleum)’라는 이름은 어떤 두 낱말에서 유래했을까요?","o":["그리스어 Petra(바위·돌) + 라틴어 Oleum(기름)","라틴어 Petro(땅) + 그리스어 Elaion(액체)","그리스어 Pyro(불) + 라틴어 Aqua(물)","라틴어 Petra(검다) + 그리스어 Naphtha(연료)"],"a":0,"e":"1556년 독일 광물학자 아그리콜라가 석유의 회수·정제를 다룬 책에서 처음 쓴 것으로 알려져 있습니다.","s":"1-1-1 석유의 정의"},{"c":"Ⅰ 석유의 이해","q":"원유에서 가장 큰 비중을 차지하는 성분과 그 비율은?","o":["수소 83~87%","탄소 83~87%","황 10~14%","질소 10~14%"],"a":1,"e":"원유는 탄소 83~87%, 수소 10~14%, 황 0.5~6%, 질소 0.1~2% 등으로 이루어집니다.","s":"1-1-1 석유의 정의"},{"c":"Ⅰ 석유의 이해","q":"원유의 비중을 나타내는 API도에 대한 설명으로 옳은 것은?","o":["비중과 비례하며, 값이 클수록 중질원유","미국석유협회가 제정했고 비중과 반비례","OPEC이 제정했으며 황 함량만 반영","값이 낮을수록 휘발유 생산량이 많음"],"a":1,"e":"API도는 미국석유협회(API)가 제정한 기준으로 비중과 반비례합니다. 보통 34~36도 이상이 경질원유, 30도 이하가 중질원유입니다.","s":"1-1-2 물리·화학적 성질"},{"c":"Ⅰ 석유의 이해","q":"업계에서 ‘sweet crude(스위트 크루드)’라고 부르는 원유는?","o":["황 함량 1% 미만인 저유황 원유","황 함량 1%를 넘는 고유황 원유","API 30도 이하의 중질원유","비전통 방식으로 생산한 원유"],"a":0,"e":"황 함량 1% 미만이 저유황(sweet), 1% 초과가 고유황(sour)입니다. 경질은 light, 중질은 heavy로 부릅니다.","s":"1-1-2 물리·화학적 성질"},{"c":"Ⅰ 석유의 이해","q":"‘확인매장량(Proved Reserves)’의 기준은?","o":["실제 회수량이 평가량 이상일 확률 10% 이상","실제 회수량이 평가량 이상일 확률 50% 이상","실제 회수량이 평가량 이상일 확률 90% 이상","시추 없이 지질 해석만으로 산정한 양"],"a":2,"e":"확인 90% · 추정(Probable) 50% · 가능(Possible) 10% 이상으로 나뉩니다.","s":"1-1-3 석유 매장량 개념"},{"c":"Ⅰ 석유의 이해","q":"가채년수(R/P Ratio)를 옳게 설명한 것은?","o":["확인매장량을 생산량으로 나눈 값, 최근 40~50년 수준","생산량을 확인매장량으로 나눈 값, 최근 10년 수준","석유가 완전히 고갈되는 시점까지 남은 햇수","신규 유전 발견 주기를 뜻하는 지표"],"a":0,"e":"1990년대 이후 세계 확인매장량은 1.5~2조 배럴, 가채년수는 40~50년 수준을 유지해 왔습니다. 기술 발전으로 확인매장량이 늘 수 있어 고갈 시점과 같은 뜻은 아닙니다.","s":"1-1-3 가채년수"},{"c":"Ⅰ 석유의 이해","q":"2022년 기준 세계 1차 에너지 수요에서 석유가 차지한 비중은?","o":["약 23.5%로 3위","약 26.7%로 2위","약 31.6%로 1위","약 45.0%로 1위"],"a":2,"e":"석유 31.6%, 석탄 26.7%, 천연가스 23.5% 순입니다. 석유는 저장·수송이 쉽고 다양한 제품을 만들 수 있어 비중이 가장 높습니다.","s":"1-2-1 세계 석유 수요 현황"},{"c":"Ⅰ 석유의 이해","q":"2022년 세계 석유소비량에서 한국의 순위는?","o":["5위","8위","12위","15위"],"a":1,"e":"미국(20.2%)·중국(14.3%)·인도·사우디·러시아에 이어 한국은 8위(2,874천 b/d, 2.9%)였습니다.","s":"1-2-1 주요 국가별 석유소비 순위"},{"c":"Ⅱ 국제석유산업","q":"근대 석유산업의 출발점이 된 최초의 유정 굴착 성공은 언제, 어디서 있었을까요?","o":["1859년 미국 펜실베이니아, Drake 대령","1870년 미국 오하이오, 록펠러","1908년 미국 미시간, 헨리 포드","1944년 사우디아라비아 가와르"],"a":0,"e":"1859년 Drake 대령이 심도 21m 유정 굴착에 성공하면서 이른바 ‘검은 황금러시’가 시작됐습니다.","s":"2-1-1 세계 석유산업의 역사"},{"c":"Ⅱ 국제석유산업","q":"존 록펠러가 세운 Standard Oil Company는 어떻게 되었나요?","o":["1911년 독점 문제로 해체되어 30여 개 회사로 분할","1911년 OPEC에 흡수","1945년 국유화되어 아람코가 됨","현재까지 단일 회사로 유지"],"a":0,"e":"1870년 설립돼 석유개발·정제·운송을 지배했으나 독점 문제가 제기되어 1911년 해체됐습니다.","s":"2-1-1 메이저 석유회사 시대"},{"c":"Ⅱ 국제석유산업","q":"석유수출국기구(OPEC)가 결성된 시기와 장소는?","o":["1960년 9월 바그다드","1973년 10월 리야드","1974년 파리","1983년 뉴욕"],"a":0,"e":"베네수엘라·사우디아라비아·이라크·이란·쿠웨이트 대표가 바그다드에 모여 설립했습니다. 1974년 파리에서 설립된 IEA는 반대로 석유 수입국의 기구입니다.","s":"2-1-1 OPEC 주도 시대"},{"c":"Ⅱ 국제석유산업","q":"1차 석유파동(1973~1974) 당시 원유가격 상승 폭은?","o":["약 40% 상승","약 100% 상승","약 240% 상승","400% 이상 급등"],"a":3,"e":"1973년 10월부터 1974년 1월까지 400% 이상 급등했습니다. 이란 혁명으로 촉발된 2차 석유파동(1978~1980)은 240% 이상이었습니다.","s":"2-1-1 1차 석유파동"},{"c":"Ⅱ 국제석유산업","q":"2020년 4월 20일, 국제유가 역사에서 처음 일어난 일은?","o":["WTI 선물가격이 배럴당 140달러 돌파","WTI 선물 종가가 마이너스(-$37.63/B) 기록","브렌트유 거래가 전면 중단","두바이유가 WTI를 추월"],"a":1,"e":"코로나19로 수요가 급감하고 저장시설이 포화되면서 WTI 선물유가가 사상 처음 마이너스를 기록했습니다.","s":"2-1-1 변동성의 시대"},{"c":"Ⅱ 국제석유산업","q":"석유산업의 가치사슬에서 ‘상류부문(Upstream)’에 해당하는 단계는?","o":["정제 → 수송·저장 → 판매","탐사 → 개발 → 생산","수입 → 비축 → 배분","도매 → 소매 → 주유소"],"a":1,"e":"상류는 탐사·개발·생산, 하류는 정제·수송저장·판매입니다.","s":"2-1-1 석유산업의 가치사슬"},{"c":"Ⅱ 국제석유산업","q":"NYMEX의 WTI 선물과 ICE의 Brent 선물의 만기 처리 방식 차이는?","o":["둘 다 실물 인수도","둘 다 현금 청산","NYMEX는 Cushing에서 실물 인수도, ICE는 현금 청산","NYMEX는 현금 청산, ICE는 런던에서 실물 인수도"],"a":2,"e":"NYMEX WTI는 오클라호마주 Cushing에서 실물 인수도가 이루어져 그 지역 재고가 WTI 가격에 큰 영향을 줍니다. ICE Brent는 현금 청산입니다.","s":"2-3-2 주요 선물시장 개요"},{"c":"Ⅲ 국내석유산업","q":"2022년 기준 우리나라의 중동 원유 수입의존도는?","o":["약 27.4%","약 47.4%","약 67.4%","약 87.4%"],"a":2,"e":"중동 산유국들은 대부분 기간계약으로 판매하며, 국내 정유사는 도입량의 약 70%를 기간계약으로, 30%를 현물로 확보합니다.","s":"2-3-2 실물거래"},{"c":"Ⅲ 국내석유산업","q":"2022년 국내 석유제품 수급 규모로 맞는 것은?","o":["공급 약 16.1억 배럴, 수요 약 15.2억 배럴","공급 약 5.0억 배럴, 수요 약 3.7억 배럴","공급 약 9.5억 배럴, 수요 약 12.4억 배럴","공급 약 30억 배럴, 수요 약 28억 배럴"],"a":0,"e":"공급은 생산 12.4억 + 수입 3.7억 배럴, 수요는 내수 9.5억 + 수출 5.0억 + 국제벙커링 0.7억 배럴이었습니다.","s":"3-1-1 국내석유수급 현황"}]</script>
+<script>
+(function(){
+  var Q = JSON.parse(document.getElementById('qs').textContent);
+  var stage = document.getElementById('stage');
+  var i = 0, log = [];
+  var AB = ['A','B','C','D'];
+
+  document.getElementById('foot').textContent =
+    '출처: 한국석유공사 「일반 석유상식」(공공데이터포털 개방자료, PDF ' + '10개 파일). '
+    + '문항과 해설은 원문 서술을 근거로 작성했습니다.';
+
+  function esc(s){ return s.replace(/[&<>]/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;'})[c]; }); }
+
+  function question(){
+    var q = Q[i];
+    var h = '<div class="meter"><i style="width:'+(i/Q.length*100)+'%"></i></div>'
+      + '<div class="qtop"><span class="tag">'+esc(q.c)+'</span>'
+      + '<span class="count">'+(i+1)+' / '+Q.length+'</span></div>'
+      + '<p class="q">'+esc(q.q)+'</p><div class="opts" id="opts"></div><div id="after"></div>';
+    stage.innerHTML = h;
+    var box = document.getElementById('opts');
+    q.o.forEach(function(t, k){
+      var b = document.createElement('button');
+      b.type='button'; b.className='opt';
+      b.innerHTML = '<span class="mk">'+AB[k]+'</span><span>'+esc(t)+'</span>';
+      b.onclick = function(){ answer(k); };
+      box.appendChild(b);
+    });
+  }
+
+  function answer(k){
+    var q = Q[i], opts = document.querySelectorAll('.opt');
+    opts.forEach(function(b, n){
+      b.disabled = true;
+      if(n === q.a) b.classList.add('ok');
+      else if(n === k) b.classList.add('no');
+    });
+    log.push({ q:q, pick:k, ok:(k === q.a) });
+    var last = (i === Q.length - 1);
+    document.getElementById('after').innerHTML =
+      '<div class="exp"><b>'+(k===q.a ? '정답입니다.' : '정답은 '+AB[q.a]+'.')+'</b> '+esc(q.e)
+      + '<span class="src">원문 ' + esc(q.s) + '</span></div>'
+      + '<div class="act"><button class="go" id="next">'+(last ? '결과 보기' : '다음 문항')+'</button></div>';
+    var nx = document.getElementById('next');
+    nx.focus();
+    nx.onclick = function(){ i++; if(i < Q.length) question(); else result(); };
+  }
+
+  function result(){
+    var n = log.filter(function(x){ return x.ok; }).length, p = Math.round(n/Q.length*100);
+    var g = p>=90 ? ['석유 전문가','원문을 거의 다 짚으셨습니다.']
+          : p>=70 ? ['상식 우등','큰 줄기는 확실히 잡고 계십니다.']
+          : p>=50 ? ['입문 통과','절반 이상 맞히셨습니다. 틀린 문항만 다시 보세요.']
+                  : ['다시 도전','해설을 훑어보고 한 번 더 풀어보세요.'];
+    var h = '<div class="score"><div class="n">'+n+' / '+Q.length+'</div>'
+      + '<div class="g">'+g[0]+' · '+p+'점</div><div class="d">'+g[1]+'</div></div><div class="review">';
+    log.forEach(function(x, k){
+      h += '<div class="rv '+(x.ok?'ok':'no')+'"><span class="ic">'+(x.ok?'✓':'✕')+'</span>'
+         + '<span><b>'+(k+1)+'.</b> '+esc(x.q.q)
+         + (x.ok ? '' : '<br><span style="color:var(--muted)">정답 — '+esc(x.q.o[x.q.a])+'</span>')
+         + '</span></div>';
+    });
+    h += '</div><div class="act"><button class="go" id="again">다시 풀기</button></div>';
+    stage.innerHTML = h;
+    document.getElementById('again').onclick = function(){ i=0; log=[]; question(); };
+  }
+
+  question();
+})();
+</script><button class="themebtn" id="themebtn" type="button" aria-label="밝게 또는 어둡게 전환" title="밝게/어둡게">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+</button>
+<script>
+(function(){var r=document.documentElement,b=document.getElementById('themebtn');var s=null;
+try{s=localStorage.getItem('oilquiz-theme')}catch(e){} if(s)r.setAttribute('data-theme',s);
+b.addEventListener('click',function(){var d=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme:dark)').matches);
+var n=d?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('oilquiz-theme',n)}catch(e){}});})();
+</script>
+</body>
+</html>
